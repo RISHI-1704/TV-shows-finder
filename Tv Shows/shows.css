@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    /* color:#FF3131;
+    font-weight: lighter;
+    text-shadow: 1px 0.5px indianred; */
+}
+
+a:hover{
+    color: lightcoral;
+    transition: 1s;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border: 1px solid indianred;
+    border-style: dotted;
+    padding: 1.2%;
+}
+
+body{
+    background-color: #000
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn:hover{
+    background-color: lightcoral;
+    transition: 0.8s;
+
+}
+input{
+    font-weight: bold;
+}
+
+img:hover{
+    z-index: 3;
+    transform: scale(1.1);
+    box-shadow: 0 25px 40px ;
+    border:none;
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color:#FF3131;
+    font-weight: lighter;
+    text-shadow: 1px 0.5px indianred;
+}
