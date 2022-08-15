@@ -8,7 +8,7 @@ form.addEventListener('submit',async function (e){
         e.preventDefault();
         const search = form.elements.query.value;
         const config = {params :{q:search}}
-        const res = await axios.get(`http://api.tvmaze.com/search/shows?`,config)
+        const res = await axios.get(`https://api.tvmaze.com/search/shows?`,config)
         getImage(res.data);
         form.elements.query.value = '';
         getRate(res.data);
