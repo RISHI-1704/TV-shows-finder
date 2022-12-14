@@ -11,7 +11,6 @@ form.addEventListener('submit',async function (e){
         const res = await axios.get(`https://api.tvmaze.com/search/shows?`,config)
         getImage(res.data);
         form.elements.query.value = '';
-        getRate(res.data);
     }
     catch{
         document.write('Sorry,try again later :(');
@@ -36,14 +35,6 @@ const deleteImgs = function () {
      }
 }
 
-const getRate = (shows) =>{
-    for (let result of shows ){ 
-        if (result.show.rating){
-        const rates = result.show.rating;
-        console.log(rates)
-        }
-    }
-}
  
 head.addEventListener('click',deleteImgs)
     
